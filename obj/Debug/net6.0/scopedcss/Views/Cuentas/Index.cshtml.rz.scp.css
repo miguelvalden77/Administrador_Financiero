@@ -1,0 +1,18 @@
+.contenedor-totales[b-05jcn8n5mf]{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.75rem;
+}
+
+.activos[b-05jcn8n5mf]{
+    color: darkgreen;
+}
+
+.pasivos[b-05jcn8n5mf]{
+    color: red;
+}
+
+.btn-acc[b-05jcn8n5mf]{
+    display: flex;
+    justify-content: space-between;
+}

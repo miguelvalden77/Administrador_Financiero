@@ -1,0 +1,45 @@
+#race{
+    height: 400px;
+    padding: 0.5rem;
+    border-bottom: 0.5px solid gray;
+    box-shadow: 0 0 5px grey;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+#race-line{
+    background-color: red;
+    width: 2px;
+    height: calc(100% - 12px);
+    z-index: 10;
+    position: absolute;
+    margin-left: 540px;
+}
+
+.table{
+    border: 1px solid black;
+    border-bottom: 0.5px solid gray;
+    box-shadow: 0 0 5px grey;
+    margin-bottom: 1.5rem;
+    width: 200px;
+}
+
+.posicion{
+    position: absolute;
+    bottom: 10px;
+    right: -10px;
+}
+
+.selection{
+    padding: 2rem;
+    border-bottom: 0.5px solid gray;
+    box-shadow: 0 0 5px grey;
+    margin-bottom: 1.5rem;
+}
+
+.btn-section{
+    padding: 0.5rem;
+    border-bottom: 0.5px solid gray;
+    box-shadow: 0 0 5px grey;
+    margin-bottom: 1rem;
+}

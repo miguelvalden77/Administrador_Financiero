@@ -1,0 +1,30 @@
+@model ResumenMontoViewModel
+
+<section style="display: flex;
+    justify-content: space-around;
+    font-size: 1.75rem;" class="contenedor-totales mb-3">
+    <div>
+        <div>
+            <strong>Depósitos</strong>
+        </div>
+        <div class="activo">
+            @Model.Ingresos.ToString("N")
+        </div>
+    </div>
+    <div>
+        <div>
+            <strong>Retiros</strong>
+        </div>
+        <div class="pasivo" style="color: red;">
+            @Model.Gastos.ToString("N")
+        </div>
+    </div>
+    <div>
+        <div>
+            <strong>Total</strong>
+        </div>
+        <div>
+            @Model.Total.ToString("N")
+        </div>
+    </div>
+</section>

@@ -1,0 +1,18 @@
+.contenedor-totales{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.75rem;
+}
+
+.activos{
+    color: darkgreen;
+}
+
+.pasivos{
+    color: red;
+}
+
+.btn-acc{
+    display: flex;
+    justify-content: space-between;
+}
