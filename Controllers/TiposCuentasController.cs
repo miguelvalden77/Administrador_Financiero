@@ -52,10 +52,10 @@ namespace ManejoPresupuesto.Controllers
             return RedirectToAction("Index");
         }
 
-        public async Task<IActionResult> VerificarExiste(string nombre)
+        public async Task<IActionResult> VerificarExiste(string nombre, int Id)
         {
             int UsuarioId = servicioUsuarios.GetUsuarioId();
-            bool YaExiste = await repositorioTiposCuentas.Existe(nombre, UsuarioId);
+            bool YaExiste = await repositorioTiposCuentas.Existe(nombre, UsuarioId, Id);
 
             if (YaExiste)
             {

@@ -7,11 +7,12 @@ namespace ManejoPresupuesto.Services
     public interface IRepositorioCategoria
     {
         Task CrearCategoria(Categoria categoria);
-        Task<IEnumerable<Categoria>> ObtenerCategorias(int usuarioId);
+        Task<IEnumerable<Categoria>> ObtenerCategorias(int usuarioId, PaginacionViewModel paginacion);
         Task<Categoria> ObtenerUnaCategoria(int id, int usuarioId);
         Task EditarCategoria(Categoria categoria);
         Task BorrarCategoria(int id);
         Task<IEnumerable<Categoria>> ObtenerCategoriaOperacion(int usuarioId, TipoOperacion tipoOperacionId);
+        Task<int> Contar(int usuarioId);
     }
 
     public class RepositorioCategoria : IRepositorioCategoria
@@ -32,10 +33,18 @@ namespace ManejoPresupuesto.Services
             categoria.Id = id;
         }
 
-        public async Task<IEnumerable<Categoria>> ObtenerCategorias(int usuarioId)
+        public async Task<int> Contar(int usuarioId)
         {
             using var connection = new SqlConnection(connectionString);
-            var categorias = await connection.QueryAsync<Categoria>(@"SELECT * FROM Categorias WHERE UsuarioId = @UsuarioId;", new {usuarioId});
+            var numeroPaginas = await connection.ExecuteScalarAsync<int>(@"SELECT COUNT(*) FROM Categorias WHERE UsuarioId = @usuarioId;", new {usuarioId});
+
+            return numeroPaginas;
+        }
+
+        public async Task<IEnumerable<Categoria>> ObtenerCategorias(int usuarioId, PaginacionViewModel paginacion)
+        {
+            using var connection = new SqlConnection(connectionString);
+            var categorias = await connection.QueryAsync<Categoria>(@$"SELECT * FROM Categorias WHERE UsuarioId = @UsuarioId ORDER BY Nombre OFFSET {paginacion.RecordsASaltar} ROWS FETCH NEXT {paginacion.RecordsPorPagina} ROWS ONLY;", new {usuarioId});
 
             return categorias;
         }

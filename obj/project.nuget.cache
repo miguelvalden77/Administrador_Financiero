@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JW7XTktl8nUa5ZDuz2933o+oDVrryE045Pvp1qjY51iMSMOjloSaaUsO1vqEpAyNWvmJL9F0TohmN5wFk3PgDQ==",
+  "dgSpecHash": "0G7GKi2PljdeXw5uT3Ahc5v5mlbRRLOgWnawFVUa9dk/zzJnzCmfr1CICda8yLSiH4KI98QJMWKsrk02KwI08g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\migue\\OneDrive\\Escritorio\\Programación\\Proyectos\\ManejoPresupuesto\\ManejoPresupuesto.csproj",
+  "projectFilePath": "C:\\Users\\migue\\OneDrive\\Escritorio\\Programación\\Proyectos\\Administrador_Financiero\\ManejoPresupuesto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\migue\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

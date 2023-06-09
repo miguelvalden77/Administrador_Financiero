@@ -6529,11 +6529,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\migue\\OneDrive\\Escritorio\\Programación\\Proyectos\\ManejoPresupuesto\\ManejoPresupuesto.csproj",
+      "projectUniqueName": "C:\\Users\\migue\\OneDrive\\Escritorio\\Programación\\Proyectos\\Administrador_Financiero\\ManejoPresupuesto.csproj",
       "projectName": "ManejoPresupuesto",
-      "projectPath": "c:\\Users\\migue\\OneDrive\\Escritorio\\Programación\\Proyectos\\ManejoPresupuesto\\ManejoPresupuesto.csproj",
+      "projectPath": "C:\\Users\\migue\\OneDrive\\Escritorio\\Programación\\Proyectos\\Administrador_Financiero\\ManejoPresupuesto.csproj",
       "packagesPath": "C:\\Users\\migue\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\migue\\OneDrive\\Escritorio\\Programación\\Proyectos\\ManejoPresupuesto\\obj\\",
+      "outputPath": "C:\\Users\\migue\\OneDrive\\Escritorio\\Programación\\Proyectos\\Administrador_Financiero\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\migue\\AppData\\Roaming\\NuGet\\NuGet.Config",
